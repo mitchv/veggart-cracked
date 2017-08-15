@@ -5,9 +5,9 @@ var y = canvas.height / 2;
 var radius = 100;
 var counterClockwise = false;
 
-for(var angle=0; angle<=360; angle+=1){
-    var startAngle = (angle-2)*Math.PI/180;
-    var endAngle = angle * Math.PI/180;
+for(var angle=0; angle<=360; angle+=60){
+    var startAngle = (angle-60)*Math.PI/180;
+    var endAngle = (angle) * Math.PI/180;
     context.beginPath();
     context.moveTo(x, y);
     context.arc(x, y, radius, startAngle, endAngle, counterClockwise);
