@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Anton');
+
+.pad-marg-deco {
+  padding:0;
+  margin:0;
+  list-style: none outside;
+}
+
+.egg {  
+  position:absolute;
+  padding-top:68px;
+  text-align:center;
+  z-index:20;
+  font-family:'Anton';
+  font-size:16pt;
+  cursor:pointer;
+}
+
+body {
+  @extend .pad-marg-deco;
+}
+
+ul {
+  @extend .pad-marg-deco;
+  .caption {
+    position:absolute;
+    top:248px;
+    left:270px;
+    text-align:center;
+    color:#000;
+    display:none;
+    z-index:30;
+  }
+}
+
+.egg1 {
+  @extend .egg;
+  top:18px;
+  left:65px;
+  height:160px;
+  width:170px;
+}
+
+.egg2 {
+  @extend .egg;
+  top:96px;
+  left:236px;
+  height:160px;
+  width:160px;
+}
+
+.egg3 {
+  @extend .egg;
+  top:11px;
+  left:388px;
+  height:150px;
+  width:190px;
+}
+
+.egg4 {
+  @extend .egg;
+  top:154px;
+  left:474px;
+  height:180px;
+  width:190px;
+}
+
+.egg5 {
+  @extend .egg;
+  top:297px;
+  left:285px;
+  height:170px;
+  width:200px;
+}
+
+.egg6 {
+  @extend .egg;
+  top:208px;
+  left:100px;
+  height:190px;
+  width:160px;
+}
+
+#egg1cap {
+  display:block;}
+
+#carton {
+  position:relative;
+}
+
+#eggpic {
+  display:block;
+  height:480px;
+  width:720px;
+  background:url('http://veggart.com/carton-resized.jpg') no-repeat;
+  }
